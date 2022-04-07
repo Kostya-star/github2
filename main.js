@@ -166,13 +166,73 @@
 // console.log(countup(5));
 
 // Only change code below this line
-function countdown(n){
-  if (n<=0) {
-    return [];
-  } else {
-    const countBackwardsArray = countdown(n-1);
-    countBackwardsArray.push(n);
-    return countBackwardsArray;
-  }
-}
-console.log(countdown(5));
+// function countdown(n){
+//   if (n<=0) {
+//     return [];
+//   } else {
+//     const countBackwardsArray = countdown(n-1);
+//     countBackwardsArray.push(n);
+//     return countBackwardsArray;
+//   }
+// }
+// console.log(countdown(5));
+//  let value = true;
+//  console.log(typeof value)
+//  value = String(value);
+//  console.log(typeof value)
+// let num = '123';
+// console.log(typeof num);
+// num = Number(num);
+// console.log(typeof num);
+
+// console.log('6'/'2');
+// console.log(Number(1));
+// console.log(Number(6));
+
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+// console.log(Boolean('hello'));
+// console.log(Boolean());
+// console.log(Boolean('0'));
+// console.log(Boolean(' '));
+
+// let x = 1;
+// x = -x;
+// console.log(x);
+// console.log(8%3)
+// console.log(10%3)
+
+// console.log(2**2)
+// console.log(3**5);
+// console.log(1**45);
+// let cans = 'a' + 'b';
+// console.log(cans);
+// console.log(2+2+'2');
+// console.log('2'+'2'+2);
+// console.log('2'-'1');
+// console.log(6-'5');
+// console.log(6/'2');
+// console.log(+true);
+// console.log(+'4');
+// let apples = '3';
+// let oranges = '4';
+// console.log(+apples + +oranges);
+// console.log(Number(apples) + Number(oranges));
+// console.log(2+2*5);
+// '1'
+// '-1'
+// 1 or true
+// 2
+// 6 or '6'
+// '9px'
+// "$45"
+// 2
+// NaN
+// -4
+// '-14'
+// ----
+// ----
+// null
+let a = +prompt('your first number', 1);
+let b = +prompt('second num', 2);
+console.log(a + b)
