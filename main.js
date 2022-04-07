@@ -148,8 +148,31 @@
 //   }
   
 //  console.log(convertToInteger('0000000000987834200002')); 
-function convertToInteger(str) {
-  return parseInt(str, 2);
-  }
+// function convertToInteger(str) {
+//   return parseInt(str, 2);
+//   }
   
- console.log(convertToInteger("1"));
+//  console.log(convertToInteger("1"));
+
+// function countup(n) {
+//   if (n < 1) {
+//     return [];
+//   } else {
+//     const countArray = countup(n - 1);
+//     countArray.push(n);
+//     return countArray;
+//   }
+// }
+// console.log(countup(5));
+
+// Only change code below this line
+function countdown(n){
+  if (n<=0) {
+    return [];
+  } else {
+    const countBackwardsArray = countdown(n-1);
+    countBackwardsArray.push(n);
+    return countBackwardsArray;
+  }
+}
+console.log(countdown(5));
