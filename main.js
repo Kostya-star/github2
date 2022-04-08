@@ -233,6 +233,78 @@
 // ----
 // ----
 // null
-let a = +prompt('your first number', 1);
-let b = +prompt('second num', 2);
-console.log(a + b)
+// let a = +prompt('your first number', 1);
+// let b = +prompt('second num', 2);
+// console.log(a + b)
+
+// let age = prompt('How old are you?');
+// let message = (age <3) ? ' hey baby' :
+//     (age<18) ? 'hey u r a teenager already!' :
+//     (age<100) ? 'you r old man!' :
+//     'What an unusual age!';
+//     console.log(message);
+// let message;
+// let age = prompt('how old r u?');
+// if (age<3) {
+//   message = 'hey';
+// } else if (age <18) { 
+//   message = 'Hello young man!';
+// } else if (age <100) {
+//   message = 'Hello an old man!'
+// } else {
+//   message = 'what an unusual age!'
+// }
+// console.log(message);
+
+// let company = prompt('what company created js?');
+// if(company == 'Netscape') {
+//   console.log('Right!');
+// } else {
+//   console.log('Wrong!');
+// }
+// let comp = prompt('what comp created js?');
+// (comp == 'Netsacpe') ? console.log('right!') : 
+// console.log('wrong!');
+
+// let jsname = prompt('what is the official name of js?');
+// if (jsname == 'ECMAScript') {
+//   console.log('right!');
+// } else {
+//   console.log('didnt u know? ECMAScript!');
+// }
+// let num = prompt('Number?');
+// if (num > 0) {
+//   console.log(1);
+// } else if (num <0) {
+//   console.log(-1);
+// } else {
+//   console.log(0);
+// }
+// let result = (a+b<4) ? 'Below' : 'over';
+// let login = prompt();
+// let message = (login=='employee') ? 'hello!' :
+//               (login == 'Director') ? 'Greetings!' :
+//               (login == '') ? 'No login!' :
+//               '';
+// console.log(message);            
+// if(age >=14 && age<=90)  
+// if(!/
+let message;
+let login = prompt('insert your login plz!')
+if(login=='Admin') {
+  let password = prompt('Insert your password plz!');
+  if(password == 'TheMaster'){
+    message = 'Welcome!';
+  } else if(password == '' || password == null) {
+    message = 'Canceled';
+  } else {
+    message = 'Wrong password'
+  }
+}
+ else if (login == '' || login == null) {
+  message = 'Canceled';
+} 
+else {
+  message = 'I dont know you!';
+}
+console.log(message);
