@@ -573,13 +573,57 @@
 // }
 // console.log(checkNum(3, 3));
 
-function pow(x, n) {
-  x = +prompt('insert x?');
-  n = +prompt('insert n?');
-  if (n<1) {
-    console.log(`the ${n} power isnt suppoerted so plz insert a num that is greater than 0`);
-  }
-  return x**n;
+// function pow(x, n) {
+//   x = +prompt('insert x?');
+//   n = +prompt('insert n?');
+//   if (n<1) {
+//     console.log(`the ${n} power isnt suppoerted so plz insert a num that is greater than 0`);
+//   }
+//   return x**n;
 
-}
-console.log(pow());
+// }
+// console.log(pow());
+
+// function sayHi() {
+//   console.log('Hello!');
+// }
+// console.log(sayHi);
+
+// function sayHi() {
+//   console.log('Hello!');
+// }
+// let func = sayHi;
+// func();
+// sayHi();
+
+// function ask(question, yes, no) {
+//   if(confirm(question) == true) {
+//     yes()
+//   } 
+//   else {
+//     no()
+//   }
+// }
+// function showOk() {
+//   console.log('u agreed');
+// }
+// function showCancel() {
+//   console.log('you canceled');
+// }
+// ask('do oyu agree?', showOk, showCancel);
+
+// function ask(question, yes, no) {
+//   if(confirm(question) === true) {
+//     yes()
+//   } else {
+//     no()
+//   }
+// };
+// ask('do u agree?',
+// function(){console.log('u just agreed');},
+// function(){console.log('u just canceled');}
+// );
+
+// let sayHi = function(name) {
+//   console.log(`Hello, ${name}!`);
+// }
