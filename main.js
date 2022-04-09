@@ -289,22 +289,297 @@
 // console.log(message);            
 // if(age >=14 && age<=90)  
 // if(!/
-let message;
-let login = prompt('insert your login plz!')
-if(login=='Admin') {
-  let password = prompt('Insert your password plz!');
-  if(password == 'TheMaster'){
-    message = 'Welcome!';
-  } else if(password == '' || password == null) {
-    message = 'Canceled';
-  } else {
-    message = 'Wrong password'
+// let message;
+// let login = prompt('insert your login plz!')
+// if(login=='Admin') {
+//   let password = prompt('Insert your password plz!');
+//   if(password == 'TheMaster'){
+//     message = 'Welcome!';
+//   } else if(password == '' || password == null) {
+//     message = 'Canceled';
+//   } else {
+//     message = 'Wrong password'
+//   }
+// }
+//  else if (login == '' || login == null) {
+//   message = 'Canceled';
+// } 
+// else {
+//   message = 'I dont know you!';
+// }
+// console.log(message);
+
+// let i = 0;
+// while (i<3) {
+//   console.log(i);
+//   i++;
+// }
+// let i = 10;
+// while (i !=0) {
+//   console.log(i);
+//   i--;
+// }
+// let i = 0;
+// do{
+//   console.log(i);
+//   i++;
+// } while(i<5);
+// let i = 1;
+// for(i = 1; i < 10; i++){
+//   // console.log(i);
+// }
+// console.log(i);
+// console.log(i);
+// console.log(i);
+// let i = 0;
+// for (;i<3;i++) {
+//   console.log(i);
+// }
+// let i = 0;
+// for (;i<4;) {
+//   console.log(i++);
+// }
+// let sum = 0;
+// while (true) {
+//   let value = +prompt('Enter your number');
+//   if(!value) break;
+//   sum = sum+value;
+// }
+// alert('Sum: ' + sum);
+// for (let i = 0; i<10; i++) {
+//   if(i % 2 == 0) continue;
+//   console.log(i);
+// }
+// for (let i = 0; i<10;i++) {
+//   if(i%2) {
+//     console.log(i);
+//   }
+// }
+
+// outer: 
+// for (let i=0;i < 3;i++) {
+//   for(let j =0; j < 3; j++){
+//     let input = prompt(`Value at coordinates is (${i},${j})`);
+//     if(!input) break outer;
+//   }
+// }
+// console.log('Done!');
+
+// let i = 0;
+// while (++i < 5) {
+//   console.log(i);
+// }
+// for(let i = 2;i<=10; i++) {
+//   if(i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+
+// let i = 0;
+// while(i<3) {
+//   console.log(`number ${i}`);
+//   i++;
+// }
+
+// outer:for (let i; ;i++) {
+//   let input = +prompt('plz insert a number that is greater than 100')
+//   if(input<100) {
+//     +prompt('plz insert a number that is greater than 100!!!');
+//   } else if (input >= 100) {
+//     break outer;
+//   } else if(input == '') {
+//     console.log(null);
+//   } 
+// }
+// let num = undefined;
+// do {
+//   num = prompt('Enter a number greater than 100?');
+// } while(num<=100&&num)
+// console.log(typeof num);
+
+// let n = 10;
+// label:
+// for(let i = 2; i<=n;i++) {
+//   for(let j = 2; j<i; j++) {
+//     if(i%j == 0) continue label;
+//   }
+//   console.log(i);
+// }
+// let out = document.querySelector('.out');
+// console.log(out);
+
+// for(let i = 1; i < 10; i++) {
+//   for(let j = 1; j < 10; j++) {
+//     out.innerHTML += `${i} * ${j} = ${i * j} <br>`
+//   }
+//   out.innerHTML += '<hr>'
+// }
+
+// let n = 10;
+
+// outer: 
+// for(let i = 2; i <= n; i++) {
+//   for(let j = 2; j < i; j++){
+//     if(i % j == 0) continue outer;
+//   }
+//   console.log(i);
+// }
+// let out = document.querySelector('.out');
+// let tmp = '';
+// for (let i = 4; i<=400; i++) {
+//   tmp = tmp + i + ' ';
+// }
+// out.innerHTML = tmp;
+// for(i=4; i<=13; i=i+3) {
+//   tmp = tmp + i + ' ';
+// }
+// out.innerHTML = tmp;
+// for(i=654; i>0; i=i-1) {
+//     // tmp = tmp + i + ' ';
+//     console.log(i);
+// }
+// // out.innerHTML = tmp;
+
+// for(i=1983; i<=2017; i++) {
+//   console.log(i);
+// }
+// for(i=-4; i<=100; i=i+2) {
+//   console.log(i);
+// }
+
+// let out = document.querySelector('.out');
+
+// for(i=1; i<=9;i++) {
+//   for(j=1; j<=9; j++){
+//     out.innerHTML += i + '*' + j + '=' + (j*i) + '<br>';
+//   }
+//   out.innerHTML+= '<hr>';
+// }
+// for(i=7; i<=100;i++) {
+//     out.innerHTML += '&#' + i + ' ';
+// }
+// let browser;
+// if(browser === 'Edge') {
+//   console.log('uve got the edge!');
+// }else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+//   console.log('okay we support these browsers too!');
+// } else {
+//   'we hope this page looks ok!'
+// }
+//  let a = +prompt('a?');
+//  switch(a) {
+//    case 0:
+//      console.log(0);
+//      break;
+//    case 1:
+//      console.log(1);
+//      break;
+//    case 2:
+//    case 3:
+//      console.log('2, 3');   
+//      break;   
+//  }
+
+// let userName = 'Costya';
+
+// function showMessage() {
+//   let greeting = 'Hello ' + userName;
+//   console.log(greeting);
+// }
+// showMessage();
+
+// function showMessage(from, text) {
+//   from = '*' + from + '*';
+//   console.log(from, text);
+// }
+// showMessage('Anna', 'Hello!');
+
+// function showMessage(from, text) {
+//   if(text===undefined) {
+//     text = 'text does not exist'
+//   }
+//   console.log(from + ': ' + text);
+// }
+// showMessage('Costya', 'you are trully awesome!')
+
+// function sum(a, b) {
+//   return a + b;
+// }
+// let result = sum(1, 2);
+// console.log(result);
+
+// function checkAge(age) {
+//   if(age > 18) {
+//     return true
+//   } else {
+//     return confirm('Did your parents allow you?')
+//   }
+// }
+// let age = prompt('how old r u?');
+// if(checkAge(age)) {
+//   console.log('Access granted');
+// } else {
+//   console.log('Access denied');
+// }
+
+// function showPrimes(n) {
+//   nextPrime:
+//   for(i=2; i<n; i++) {
+//     for(j=2; j<i; j++) {
+//       if(i%j==0) continue nextPrime;
+//     }
+//     console.log(i);
+//   }
+// }
+// showPrimes(100);
+
+// function showPrimes(n) {
+//   for(let i =2; i<n; i++) {
+//     if (!isPrime) continue; 
+//     console.log(i);
+//   }
+// }
+// function isPrime(n) {
+//   for(let i = 2; i<n; i++) {
+//     if (n%i == 0) return false;
+//   }
+//   return true;
+// }
+
+// function checkAge(age) {
+//   if (age>18) 
+//   {return true;}
+//   else {
+//     return confirm('did your parents allow you to?')
+//   }
+// }
+
+// function checkAge(age) {
+//   return (age>18) ?  true :  confirm('did your parents allow u to?');
+//   return (age>18) || confirm('did your parents allow u to?');
+// }
+
+// function checkNum(a, b) {
+//   return (a<b) ? a : b
+// }
+// checkNum(4, 54)
+
+// function checkNum(a, b) {
+//   if (a<b) {
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+// console.log(checkNum(3, 3));
+
+function pow(x, n) {
+  x = +prompt('insert x?');
+  n = +prompt('insert n?');
+  if (n<1) {
+    console.log(`the ${n} power isnt suppoerted so plz insert a num that is greater than 0`);
   }
+  return x**n;
+
 }
- else if (login == '' || login == null) {
-  message = 'Canceled';
-} 
-else {
-  message = 'I dont know you!';
-}
-console.log(message);
+console.log(pow());
