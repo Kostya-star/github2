@@ -627,3 +627,208 @@
 // let sayHi = function(name) {
 //   console.log(`Hello, ${name}!`);
 // }
+// function sayHi() {
+//   console.log('Hello!');
+// }
+// let func = sayHi;
+// func();
+// sayHi();
+
+// function ask (question, yes, no) {
+//   if(confirm(question)) yes()
+//   else no()
+// }
+// function agree() {
+//   console.log('u just agreed');
+// }
+// function noAgree() {
+//   console.log('you just canceled');
+// }
+// ask('do u agree', 
+// agree,
+// noAgree);
+
+// function ask(question, yes, no) {
+//   if(confirm(question)) yes()
+//   else no()
+// }
+// ask('do u agree?',
+// function agree() {console.log('You just agreed');},
+// function noAgree() {console.log('You just canceled');});
+
+// let age = prompt('How old r u?');
+
+// if(age<18) {
+//   function welcome() {
+//     console.log('Hey!');
+//   }
+//   // welcome()
+// } else {
+//   function welcome() {
+//     console.log('Good day!');
+//   }
+//   // welcome()
+// }
+
+// welcome()
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// // в зависимости от условия объявляем функцию
+// if (age < 18) {
+
+//   function welcome() {
+//     alert("Привет!");
+//   }
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+
+// }
+
+// // ...не работает
+// welcome(); // Error: welcome is not defined
+
+// let age = 16; // присвоим для примера 16
+
+// if (age < 18) {
+//   welcome();               // \   (выполнится)
+//                            //  |
+//   function welcome() {     //  |
+//     alert("Привет!");      //  |  Function Declaration доступно
+//   }                        //  |  во всём блоке кода, в котором объявлено
+//                            //  |
+//   welcome();               // /   (выполнится)
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+// }
+
+// // здесь фигурная скобка закрывается,
+// // поэтому Function Declaration, созданные внутри блока кода выше -- недоступны отсюда.
+
+// welcome(); // Ошибка: welcome is not defined
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// // в зависимости от условия объявляем функцию
+// if (age < 18) {
+
+//   function welcome() {
+//     alert("Привет!");
+//   }
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+
+// }
+
+// // ...не работает
+// welcome(); // Error: welcome is not defined
+
+// let age = 16; // присвоим для примера 16
+
+// if (age < 18) {
+//   welcome();               // \   (выполнится)
+//                            //  |
+//   function welcome() {     //  |
+//     alert("Привет!");      //  |  Function Declaration доступно
+//   }                        //  |  во всём блоке кода, в котором объявлено
+//                            //  |
+//   welcome();               // /   (выполнится)
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+// }
+
+// // здесь фигурная скобка закрывается,
+// // поэтому Function Declaration, созданные внутри блока кода выше -- недоступны отсюда.
+
+// welcome(); // Ошибка: welcome is not defined
+// let age = prompt("Сколько Вам лет?", 18);
+
+// let welcome;
+
+// if (age < 18) {
+
+//   welcome = function() {
+//     alert("Привет!");
+//   };
+
+// } else {
+
+//   welcome = function() {
+//     alert("Здравствуйте!");
+//   };
+
+// }
+
+// welcome(); // теперь всё в порядке
+
+// let age = prompt('how old r u?');
+// let welcome;
+
+// if (age<18) {
+//   welcome = function() {
+//     console.log('Hello!');
+//   }
+// } else {
+//   welcome = function() {
+//     console.log('Good day!');
+//   }
+// }
+// welcome();
+
+// let age = prompt('how old r u?');
+
+// let welcome;
+
+// (age<18) ? welcome = function() {console.log('Hey!')} : 
+// welcome = function() {console.log('Good day!');}
+// welcome();
+// 'use strict';
+
+
+// let age = prompt('how old r u?');
+
+// function welcome(string) {
+//   console.log(string);
+// }
+// if (age && +age<18) {
+//   welcome ('Hello!');
+// } else {
+//   welcome('Good day!')
+// }
+// // welcome('Hi there!')
+// 'use strict'
+// let age = prompt("Сколько Вам лет?", 18);
+
+// // в зависимости от условия объявляем функцию
+// if (age < 18) {
+
+//   function welcome() {
+//     alert("Привет!");
+//   }
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+//   }
+
+// }
+
+// // ...не работает
+// welcome(); // Error: welcome is not defined
