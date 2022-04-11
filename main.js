@@ -832,3 +832,63 @@
 
 // // ...не работает
 // welcome(); // Error: welcome is not defined
+
+// let sum = (a, b) => a + b;
+// console.log(sum(1, 2));
+
+// let multiply = n => n*2;
+// console.log(multiply(4));
+
+// let sayHi = () => console.log('Hello!');
+// sayHi();
+
+// let age = prompt('how old r u?');
+
+// let welcome = (age<18) ? 
+//                       () => console.log('Hello!') :
+//                       () => console.log('Greetings!');
+// welcome();
+// let sum = (a, b) => {
+//   let result = a + b;
+//   return result;
+// }
+// console.log(sum(6, 24));
+// let ask = (question, yes, no) => {
+//   if(confirm(question)) yes();
+//   else no();
+// }
+// ask('do u agree',
+// () => {console.log('U agreed');},
+// () => {console.log('u canceled');}
+// );
+// 'use strict';
+// let userName = prompt('whats your name?');
+// let wantsTea = confirm(`${userName}, do you want some tea?`);
+// let wantsTeaCheck = (yes, no) => {
+//   (wantsTea) ? yes() : no();
+// }
+// wantsTeaCheck(() => console.log('here u are'), 
+// () => console.log('fine')
+// );
+const posts = [
+  {title: 'Post One', body: 'This is post one'},
+  {title: 'Post Two', body: 'This is post two'},
+];
+function getPosts() {
+  setTimeout(() => {
+    let output = '';
+    posts.forEach((post, index) =>{
+      output += `<li>${post.title}</li>`;
+    });
+    document.body.innerHTML = output;
+  },1000);
+}
+
+function createPost(post, callback) {
+  setTimeout(() => {
+    posts.push(post);
+    callback();
+  }, 2000);
+}
+
+createPost({title: 'Post Three', body: 'This is post three'}, getPosts);
