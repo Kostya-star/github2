@@ -892,17 +892,89 @@
 // }
 
 // createPost({title: 'Post Three', body: 'This is post three'}, getPosts);
-console.log('Start');
+// console.log('Start');
 
-console.log('Start2');
+// console.log('Start2');
 
-function timeout2sec() {
-  console.log('timeout2sec');
-}
+// function timeout2sec() {
+//   console.log('timeout2sec');
+// }
 
-window.setTimeout(function() {
-  console.log('Inside timeout, after 2000 sec');
-}, 4000)
-setTimeout(timeout2sec, 2000)
+// window.setTimeout(function() {
+//   console.log('Inside timeout, after 2000 sec');
+// }, 4000)
+// setTimeout(timeout2sec, 2000)
 
-console.log('End');
+// console.log('End');
+
+
+
+
+// console.log('request data...');
+
+// setTimeout(() => {
+//   console.log('preparing data');
+
+//   const backendData = {
+//     server: 'aws',
+//     port: 2000,
+//     status: 'working'
+//   }
+
+//   setTimeout(() => {
+//     backendData.modified = true
+//     console.log('Data received', backendData)
+//   }, 2000)
+// }, 2000)
+
+// const p = new Promise(function(resolve, reject) {
+//   setTimeout(() => {
+//     console.log('preparing data')
+//     const backendData = {
+//     server: 'aws',
+//     port: 2000,
+//     status: 'working'
+//   }
+//   resolve(backendData)
+//   }, 2000)
+// })
+
+// p.then(data => {
+//   console.log('Promise resolved', data)
+// })
+
+
+
+// let firstFunction = function() {
+//   return new Promise(function(resolve, reject) {
+//     resolve('your cat is ');
+//   })
+// }
+
+// let secondFunction = function(dataFromFirstFunction) {
+//   return new Promise(function(resolve, reject){
+//     resolve(dataFromFirstFunction + 'crazy')
+//   })
+// }
+// firstFunction().then(function(data) {
+//   return secondFunction(data);
+// }).then(function(data) {
+//   console.log(data);
+// })
+
+// let allGood = true;
+// let fetchSomeData = new Promise((resolve, reject) => {
+//   if (!allGood) {
+//     reject('error fetching data!')
+//   } else {
+//     resolve({
+//       id: 1,
+//       message: 'nice work!'
+//     })
+//   }
+// })
+// fetchSomeData.then(fetchedData => {
+//   console.log('then: ', fetchedData);
+// }).catch(err => {
+//   console.log('catch:', err);
+// })
